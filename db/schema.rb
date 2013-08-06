@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130806124548) do
+ActiveRecord::Schema.define(version: 20130806152421) do
 
   create_table "app_statuses", force: true do |t|
     t.float    "cpu"
     t.float    "memory"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "app_id"
   end
 
   create_table "apps", force: true do |t|
@@ -35,14 +36,6 @@ ActiveRecord::Schema.define(version: 20130806124548) do
     t.integer  "total_memory"
     t.integer  "free_memory"
     t.float    "cpu_load"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "posts", force: true do |t|
-    t.string   "title"
-    t.string   "body"
-    t.string   "author"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
