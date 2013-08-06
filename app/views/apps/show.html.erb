@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @app.name %>
+</p>
+
+<table>
+	<tr>
+		<th>CPU</th>
+		<th>Memory</th>
+	</tr>
+
+<% @app.app_statuses.each do |status| %>
+  <tr>
+    <td><%= status.cpu %></td>
+    <td><%= status.memory %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Edit', edit_app_path(@app) %> |
+<%= link_to 'Back', apps_path %>
