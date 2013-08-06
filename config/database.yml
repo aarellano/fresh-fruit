@@ -13,7 +13,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: fresh-fruit_dev
+  database: freshfruit_dev
   pool: 5
   username: <%= ENV['DEV_DB_USER'] %>
   <% if socket %>
@@ -27,7 +27,7 @@ development:
 test:
   adapter: mysql2
   encoding: utf8
-  database: fresh-fruit_test
+  database: freshfruit_test
   pool: 5
   username: <%= ENV['DEV_DB_USER'] %>
   <% if socket %>
@@ -42,7 +42,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: fresh-fruit_prod
+  database: freshfruit_prod
   pool: 5
   username: <%= ENV['PROD_DB_USER'] %>
   password: <%= ENV['PROD_DB_PASSWD'] %>
