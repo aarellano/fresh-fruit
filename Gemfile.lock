@@ -28,7 +28,9 @@ GEM
     arel (4.0.0)
     atomic (1.1.12)
     builder (3.1.4)
-    chronic (0.9.1)
+    clockwork (0.6.0)
+      activesupport
+      tzinfo (~> 0.3.35)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
@@ -111,14 +113,12 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    whenever (0.8.4)
-      activesupport (>= 2.3.4)
-      chronic (>= 0.6.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  clockwork
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
@@ -129,4 +129,3 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   unicorn
-  whenever
