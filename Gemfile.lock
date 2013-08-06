@@ -38,6 +38,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    daemons (1.1.9)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -120,6 +121,7 @@ PLATFORMS
 DEPENDENCIES
   clockwork
   coffee-rails (~> 4.0.0)
+  daemons
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
