@@ -1,5 +1,5 @@
-task read_status: do
-	command "top -p $(pgrep -d',' -f 'unicorn master') -n 1 -b > log/apps.log"
+task :read_status do
+	`top -p $(pgrep -d',' -f 'unicorn master') -n 1 -b > log/apps.log`
 end
 
 task load_status: :environment do
