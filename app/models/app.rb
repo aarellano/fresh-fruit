@@ -11,7 +11,7 @@ class App < ActiveRecord::Base
 			next if line.strip.empty?
 			line_split = line.split
 			app_name = line_split[14].split("/")[4]
-			if (!app_name.nil? && (app = App.find_by(name: line_split[14].split("/")[4])).nil?
+			if (!app_name.nil? && (app = App.find_by(name: line_split[14].split("/")[4]))).nil?
 				app = App.create(name: app_name)
 			end
 			app << AppStatus.new(cpu: line_split[8].to_f, memory: line_split[9].to_f)
